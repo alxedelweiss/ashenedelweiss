@@ -32,7 +32,6 @@ export const FormBlock: React.FC<
   } = props
 
   const formMethods = useForm({
-    //@ts-expect-error - defaultValues is not in the types, but it is a valid option
     defaultValues: formFromProps.fields,
   })
   const {
